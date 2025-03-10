@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Yono Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.rating {
+    margin: 20px 0;
+}
+
+.rating span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+#apps {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#apps .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#apps h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.app-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.app-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.app-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.app-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}</style></head>
+<body>
+    <header>
+        <div class="container">
+            <h1>All Yono App : Yono All Games</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                    <li><a href="#join">Join Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>YONO ALL GAMES</h2>
+            <p>All Yono Games APK</p>
+            <div class="rating">
+                <span>4.7 Ratings</span>
+                <span>22-100 MB</span>
+                <span>Free</span>
+            </div>
+            <button id="downloadBtn">DOWNLOAD All Yono Games APK</button>
+            <div class="social-icons">
+                <a href="https://t.me/yourtelegramchannel" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="apps">
+        <div class="container">
+            <h2>100 Yono Apps</h2>
+            <div class="app-grid" id="appGrid">
+                <!-- Apps will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Join Us on:</p>
+            <div class="social-icons">
+                <a href="https://t.me/yourtelegramchannel" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.getElementById('downloadBtn').addEventListener('click', function() {
+    alert('Download link will be provided here.');
+});
+
+const appGrid = document.getElementById('appGrid');
+
+const apps = [
+    { name: 'winzo', image: 'app1.jpg', link: 'https://t.me/bestshayri_raj' },
+    { name: 'App 2', image: 'app2.jpg', link: '#' },
+  { name: 'App 2', image: 'app2.jpg', link: '#' },
+    // Add more apps as needed
+];
+
+apps.forEach(app => {
+    const appCard = document.createElement('div');
+    appCard.className = 'app-card';
+
+    const appImage = document.createElement('img');
+    appImage.src = app.image;
+    appImage.alt = app.name;
+
+    const appName = document.createElement('h3');
+    appName.textContent = app.name;
+
+    const appLink = document.createElement('a');
+    appLink.href = app.link;
+    appLink.textContent = 'Download';
+
+    appCard.appendChild(appImage);
+    appCard.appendChild(appName);
+    appCard.appendChild(appLink);
+
+    appGrid.appendChild(appCard);
+});</script>
+</body>
+  </html>
